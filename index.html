@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title> skpk food </title>
+
+     </head>
+          <body> 
+               <div id="produk">
+
+               </div>
+               <script src="databese.js"></script>
+
+               <script type="text/javascript">
+                    let hasil ="";
+                    for (index in produk) {
+                    hasil += "<img src'"+produk[index].foto+"'><br>";
+                    hasil += "<h1>"+produk[index].NAMA+"</h1><br>";
+                    hasil += "<h2>"+produk[index].harga+"<h2><br>";
+                    hasil += "<button onclick='myalert()'>masukkan ke keranjang </button><br><br>";
+                    
+               };
+               document.getElementById("produk").innerHTML = hasil;  
+               </script>     
+          </body>
+</html> 
